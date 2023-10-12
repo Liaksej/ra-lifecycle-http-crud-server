@@ -1,8 +1,31 @@
-### GET all unread messages
-GET {{host}}/notes
+### GET all notes
+GET http://localhost:3000/api/notes
 Accept: application/json;
 
 ###
+
+### POST a note
+POST http://localhost:3000/api/notes
+Accept: application/json;
+Content-Type: application/json
+
+{
+  "content": "Заметочка заметка замечательная 5"
+}
+
+###
+
+### DELETE a note
+DELETE http://localhost:3000/api/notes?id=628660b3-f830-45fe-ae88-2d6ff3c30306
+
+###
+
+### OPTIONS a note
+OPTIONS http://localhost:3000/api/notes
+Accept: application/json;
+
+###
+
 
 
 

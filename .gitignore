@@ -1,6 +1,7 @@
 dist
 doc
 /.idea
+.env.development.local
 
 # Logs
 logs

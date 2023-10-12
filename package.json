@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "serve": "node api/notes.ts",
-    "build": "build --output public",
+    "build": "tsc",
     "vercel-build": "npm run build"
   },
   "devDependencies": {
@@ -23,6 +23,7 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
+    "@vercel/kv": "^0.2.3",
     "uuid": "^9.0.0"
   }
 }
