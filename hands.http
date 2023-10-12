@@ -1,0 +1,9 @@
+### GET all unread messages
+GET {{host}}/notes
+Accept: application/json;
+
+###
+
+
+
+
