@@ -1,5 +1,5 @@
 ### GET all notes
-GET {{host}}/api/notes
+GET {{host}}/notes
 Accept: application/json;
 
 ### POST a note
