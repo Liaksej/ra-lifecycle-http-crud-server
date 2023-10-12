@@ -1,11 +1,9 @@
 ### GET all notes
-GET http://localhost:3000/api/notes
+GET {{host}}/api/notes
 Accept: application/json;
 
-###
-
 ### POST a note
-POST http://localhost:3000/api/notes
+POST {{host}}/api/notes
 Accept: application/json;
 Content-Type: application/json
 
@@ -13,15 +11,11 @@ Content-Type: application/json
   "content": "Заметочка заметка замечательная 5"
 }
 
-###
-
 ### DELETE a note
-DELETE http://localhost:3000/api/notes?id=628660b3-f830-45fe-ae88-2d6ff3c30306
-
-###
+DELETE {{host}}/api/notes?id=e3a10c17-f9ce-4177-b6d9-ae44c4c40aa2
 
 ### OPTIONS a note
-OPTIONS http://localhost:3000/api/notes
+OPTIONS {{host}}/api/notes
 Accept: application/json;
 
 ###
