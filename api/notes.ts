@@ -34,6 +34,9 @@ export default async function (
       if (!request.query.id) {
         return response.status(400).send("No note id provided");
       }
+      if (!notes.some((note: Note) => note.id === request.query.id)) {
+        return response.status(404).send("Note not exists");
+      }
       notes = notes.filter((note: Note) => note.id !== request.query.id);
       await kv.set("notes", notes);
       return response.status(200).send("Note deleted");
